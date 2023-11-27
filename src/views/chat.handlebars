@@ -1,0 +1,13 @@
+<div>
+    <h1>CODER - Chat</h1>
+
+    <input type="text" name="message" id="message" placeholder="Mensaje" style="width: 260px;">
+    {{!-- agregamos un evento onclick --}}
+    <button onclick="sendMessage()">Enviar</button>
+    <p id="received_messages"></p>
+</div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/static/js/chat.js"></script>
+{{!-- script para trabajar con sweet alert --}}
